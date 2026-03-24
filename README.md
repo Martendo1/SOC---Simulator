@@ -30,3 +30,112 @@ timestamp: 03/24/2026 12:35:27.900
 <img width="543" height="238" alt="image" src="https://github.com/user-attachments/assets/b9734eec-3158-4cdf-8fdb-f48ba92c939b" />
 
 
+## INCIDENT N02:
+# 🛡️ Security Incident Report
+
+## 📌 Case Details
+- **Case ID:** 8815  
+- **Alert Name:** Inbound Email Containing Suspicious External Link  
+- **Severity:** Medium  
+- **Category:** Phishing  
+- **Date:** 24 March 2026  
+
+---
+
+## ⏰ Time of Activity 
+**24 March 2026, 12:34:13 PM**
+
+---
+
+## 👥 Affected Entities
+- **Recipient:** h.harris@thetrydaily.thm  
+- **Sender:** urgents@amazon.biz  
+- **Data Source:** Email Security Gateway  
+- **Environment:** Corporate Email Infrastructure  
+- **Location:** Lagos  
+
+---
+
+## 📄 Incident Summary
+An inbound email containing a suspicious external link was detected by the email security system. The message impersonates Amazon and attempts to lure the recipient into clicking a malicious link under the pretense of resolving a delivery issue.  
+
+The email uses urgency and social engineering techniques commonly associated with phishing campaigns.
+
+---
+
+## ✅ True Positive Justification
+The alert is classified as a **True Positive** based on the following indicators:
+
+- The sender domain (`amazon.biz`) is not a legitimate Amazon domain  
+- Use of a **shortened URL (bit.ly)** to obscure the destination  
+- Presence of **urgent language** to pressure the user  
+- Email content matches known **phishing delivery scam patterns**  
+
+---
+
+## 🚨 Escalation Justification
+This alert was escalated due to:
+
+- Targeted **phishing attempt on a corporate user**  
+- Risk of **credential harvesting or malware infection**  
+- Potential **lateral spread within the organization**  
+- Need to verify **user interaction via firewall/proxy logs**  
+
+---
+
+## 🔍 Investigation Actions
+- Analyzed email headers and message content  
+- Identified suspicious sender domain and embedded link  
+- Reviewed email security logs for delivery confirmation  
+- Evaluated phishing indicators and threat patterns  
+- Recommended checking firewall/proxy logs for link access  
+
+---
+
+## 🧠 Indicators of Compromise (IOCs)
+- **Sender Email:** urgents@amazon.biz  
+- **Recipient Email:** h.harris@thetrydaily.thm  
+- **Subject:** *Your Amazon Package Couldn’t Be Delivered – Action Required*  
+- **Malicious URL:** http://bit.ly/3sHkX3da12340  
+- **Attack Type:** Phishing / Social Engineering  
+- **Technique:** URL Obfuscation (Link Shortener)  
+- **Direction:** Inbound  
+- **Timestamp:** 24 March 2026, 12:34:13 PM  
+
+---
+
+## 🛠️ Remediation Actions
+- Block sender domain (`amazon.biz`) at the email gateway  
+- Block malicious URL at firewall/proxy level  
+- Conduct **mailbox sweep** for similar phishing emails  
+- Review logs for any access attempts to the URL  
+- Educate user on phishing awareness  
+- Reset credentials if link interaction occurred  
+- Strengthen email filtering and anti-phishing controls  
+
+---
+
+## 📊 Risk Impact Assessment
+If successful, the attack could have resulted in:
+
+- Credential compromise  
+- Unauthorized system access  
+- Malware infection  
+- Data exfiltration  
+- Internal phishing propagation  
+
+---
+
+## 📌 Conclusion
+The email was confirmed to be a **phishing attempt impersonating Amazon**.  
+
+Although no immediate compromise was detected, the use of a malicious link and social engineering tactics posed a significant security risk.  
+
+**Continuous monitoring, user awareness, and improved email security controls are recommended to prevent future incidents.**
+
+---
+
+## 🏁 Analyst Verdict
+**True Positive – Phishing Attempt (Resolved)**
+
+
