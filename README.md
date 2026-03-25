@@ -174,3 +174,63 @@ Attachment:<img width="860" height="514" alt="image" src="https://github.com/use
 3. Email follows a legitimate onboarding theme
 4. Contains embedded link requesting user action
 
+## Attack Indicators
+1. Embedded link requesting user action
+2. Social engineering (onboarding scenario)
+3. Potential internal domain impersonation
+
+<img width="546" height="494" alt="image" src="https://github.com/user-attachments/assets/684c4bc4-a404-4291-93be-593c25082b37" />
+<img width="545" height="143" alt="image" src="https://github.com/user-attachments/assets/8ea67406-b0eb-4209-91ab-1e7b1802323c" />
+
+## Conclusion
+
+Status: Suspicious – Needs Validation
+
+This alert does not show strong indicators of phishing but requires verification of the sender and domain legitimacy. No confirmed malicious activity at this stage.
+
+
+
+## INCIDENT N04:
+## 📌 Case Details
+- **Case ID:** 8817 
+- **Alert Name:** Inbound Email Containing Suspicious External Link  
+- **Severity:** Medium
+- **Category:** Phishing  
+- **Date:** 24 March 2026
+
+## Description
+This alert was triggered by an inbound email containing a suspicious external link. The email claims to be from Microsoft and notifies the recipient of an unusual sign-in attempt, urging immediate action to secure the account.
+Upon analysis, the sender domain (m1crosoftsupport.co) was identified as a typosquatted domain, mimicking a legitimate Microsoft domain by replacing the letter “i” with “1”. The embedded link directs the user to a fraudulent login page intended to harvest credentials.
+
+## Analysis
+Sender: no-reply@m1crosoftsupport.co
+Recipient: c.allen@thetrydaily.thm
+Subject: Unusual Sign-In Activity on Your Microsoft Account
+Malicious URL: https://m1crosoftsupport.co/login
+IP Address (claimed): 102.89.222.143
+Attachment: <img width="1062" height="351" alt="image" src="https://github.com/user-attachments/assets/615b4a21-cac0-416f-a57d-86f620ddde26" />
+
+Indicators Identified:
+Typosquatted domain (m1crosoftsupport.co)
+Impersonation of Microsoft
+External malicious link
+Use of urgency (“secure your account immediately”)
+Suspicious login alert message
+<img width="845" height="470" alt="image" src="https://github.com/user-attachments/assets/894450df-e147-4a76-84e7-4a6ec6de752a" />
+## CASE REPORT ATTACHMENT
+<img width="435" height="456" alt="image" src="https://github.com/user-attachments/assets/e41599b9-0021-4f63-867d-91f57d22a973" />
+
+
+
+## INCIDENT N05:
+## 📌 Case Details
+- **Case ID:** 8818 
+- **Alert Name:** Inbound Email Containing Suspicious External Link  
+- **Severity:** Medium
+- **Category:** Phishing  
+- **Date:** 24 March 2026
+
+## DESCRIPTION
+This alert was generated after detecting an inbound email containing a suspicious external link. As a cybersecurity student analyzing this case, the goal is to determine whether the email is part of a phishing attack or a legitimate communication.
+
+Emails like this often require careful inspection because attackers commonly use links to trick users into visiting fake websites or entering sensitive information. During the investigation, attention should be given to the sender’s email address, the domain of the embedded link, and the overall tone of the message.
