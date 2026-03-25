@@ -1,5 +1,10 @@
 # SOC---Simulator
-
+## 📌 Case Details
+- **Case ID:** 8816  
+- **Alert Name:** Access To Blacklisted External Url Blocked By Firewall  
+- **Severity:** High
+- **Category:** Firewall  
+- **Date:** 24 March 2026  
 The alert was triggered by a phishing email containing a malicious external link and a spoofed Microsoft domaiN
 
 ##TOTAL N0 OF ALERTS
@@ -33,6 +38,10 @@ timestamp: 03/24/2026 12:35:27.900
 ## INCIDENT N02:
 # 🛡️ Security Incident Report
 
+<img width="1042" height="672" alt="image" src="https://github.com/user-attachments/assets/093d9905-15a0-477d-ab97-abd3eb96c353" />
+
+
+
 ## 📌 Case Details
 - **Case ID:** 8815  
 - **Alert Name:** Inbound Email Containing Suspicious External Link  
@@ -52,7 +61,6 @@ timestamp: 03/24/2026 12:35:27.900
 - **Sender:** urgents@amazon.biz  
 - **Data Source:** Email Security Gateway  
 - **Environment:** Corporate Email Infrastructure  
-- **Location:** Lagos  
 
 ---
 
