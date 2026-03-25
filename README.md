@@ -147,3 +147,30 @@ Although no immediate compromise was detected, the use of a malicious link and s
 **True Positive – Phishing Attempt (Resolved)**
 
 
+## INCIDENT N03:
+## 📌 Case Details
+- **Case ID:** 8814  
+- **Alert Name:** Access To Blacklisted External Url Blocked By Firewall  
+- **Severity:** Medium
+- **Category:** Phishing  
+- **Date:** 24 March 2026
+
+  ## Description
+ Splunk check: <img width="1079" height="345" alt="image" src="https://github.com/user-attachments/assets/448ddf02-9d38-4f54-82f9-7de064ba8771" />
+
+This alert was triggered by an inbound email containing an external link with potentially suspicious characteristics. The email appears to be an onboarding message sent from onboarding@hrconnex.thm to the recipient, requesting completion of a profile setup via an embedded link. 
+
+I ran a check analyzing the sender mail, it's domain is aligned with the organization
+## Analysis
+Sender: onboarding@hrconnex.thm
+Recipient: j.garcia@thetrydaily.thm
+Subject: Action Required: Finalize Your Onboarding Profile
+Link: https://hrconnex.thm/onboarding/15400654060/j.garcia
+Attachment:<img width="860" height="514" alt="image" src="https://github.com/user-attachments/assets/545aef9b-028b-411b-bee3-e15d76ae3f70" />
+
+## Observations:
+1. Domain appears internal and consistent
+2. No obvious typosquatting or spoofing detected
+3. Email follows a legitimate onboarding theme
+4. Contains embedded link requesting user action
+
